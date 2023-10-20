@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="skrypt.js"></script>
+</head>
+<body>
+	<p>Kliknij przycisk, aby wyświetlić komunikat.</p>
+	<button onclick="wyświetlKomunikat()">Kliknij mnie!</button>
+    <script>
+    function wyświetlKomunikat() {
+        alert("prosty alert");
+    }
+    </script>
+</body>
+</html>
