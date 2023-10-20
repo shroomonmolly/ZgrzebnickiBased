@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .blur {
+        filter: blur(10px);
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <h1>Numer telefonu: 12<span class="hidden">12</span><span class="hidden">-</span><span class="hidden">-</span><span class="blur">3456789</span><span class="hidden">123-456-789</span></h1>
+    <label for="show-number">
+        <input type="checkbox" id="show-number" onchange="showNumber()">
+        Pokaż cały numer telefonu
+    </label>
+
+    <script>
+        function showNumber() {
+            var number = document.querySelector("h1 span.hidden");
+            if (number.style.display === "none") {
+                number.style.display = "inline";
+            } else {
+                number.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
